@@ -15,11 +15,11 @@
   <body>
     <header class="navbar navbar-fixed-topp-3 mb-0 bg-dark text-white p-4">
       <div class="container">
-        <%= link_to "Weel", root_path, id: "logo" %>
+        <%= link_to "Weel", root_path, id: "logo", class: "text-white border-0" %>
         <nav>
           <ul class="nav list-inline ">
-            <li class="list-inline-item"><%= link_to "BLOG",   'https://sugurun.hatenablog.com/' %></li>
-            <li class="list-inline-item pl-4"><%= link_to "ABOUT",   about_path %></li>
+            <li class="list-inline-item "><%= link_to "BLOG",'https://sugurun.hatenablog.com/', class: "text-white" %></li>
+            <li class="list-inline-item pl-4"><%= link_to "ABOUT",   about_path , class: "text-white"%></li>
           </ul>
         </nav>
       </div>
