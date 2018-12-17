@@ -13,18 +13,25 @@
     <![endif]-->
   </head>
   <body>
-    <header class="navbar navbar-fixed-top navbar-inverse">
+    <header class="navbar navbar-fixed-topp-3 mb-0 bg-dark text-white p-4">
       <div class="container">
+        <%= link_to "Weel", root_path, id: "logo" %>
         <nav>
-          <ul class="nav navbar-nav navbar-right">
-            
+          <ul class="nav list-inline ">
+            <li class="list-inline-item"><%= link_to "BLOG",   'https://sugurun.hatenablog.com/' %></li>
+            <li class="list-inline-item pl-4"><%= link_to "ABOUT",   about_path %></li>
           </ul>
         </nav>
       </div>
     </header>
-    <%= image_tag('919c944731284b1b0e8eb6ff676f0dd5_m.jpg' , class:"w-100 h-50 p-0" )%>
-    <div class="container">
     <%= yield %>
+<footer class="bg-dark py-5">
+    <div class="footer_logo">
+      <a href=""></a>     
     </div>
+    <div class="copy text-center">
+        <span class="text-white-50">Copyright © 2018 Weel Inc. Official Web Site.</span>
+    </div>
+</footer>
   </body>
 </html>
